@@ -4,7 +4,7 @@ This wiki is designed to provide information and resources for users. Explore th
 
 ## Key Sections
 - [Documentation](_pages/Gollum-Wiki-User-Guide.md)
-- [Tutorials](Tutorials/)  
+- [Tutorials](Tutorials/Tutorials-Navigation.md)  
 - [FAQ](FAQ.md)
 
 Feel free to contribute and share your knowledge!
