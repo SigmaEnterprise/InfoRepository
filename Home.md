@@ -6,5 +6,5 @@ Feel free to contribute and share your knowledge!
 
 ## Key Sections
 - [Documentation](_pages/Gollum-Wiki-User-Guide.md)
-- [Tutorials](Tutorials/)
+- [Tutorials](Home/Tutorials)
 - [FAQ](FAQ.md)
