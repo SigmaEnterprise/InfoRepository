@@ -1,9 +1,5 @@
 /* ---------------------------------------------------
-   $25k+ Studio-Grade Gollum Wiki Theme
-   ---------------------------------------------------
-   - Clean, modern, and accessible design
-   - Subtle depth, gradients, and animations
-   - Responsive + Dark Mode support
+   $25k+ Studio-Grade Gollum Wiki Theme - Spectrum Edition
 --------------------------------------------------- */
 
 /* ===== Color System ===== */
@@ -14,9 +10,22 @@
   --color-primary: #0056b3;
   --color-primary-hover: #004085;
   --color-border: #dee2e6;
-  --color-code-bg: #e9ecef;
-  --color-pre-bg: #212529;
-  --color-pre-text: #f8f9fa;
+
+  /* Code block spectrum */
+  --color-code-bg: #f4f4f8;
+  --color-pre-bg: linear-gradient(135deg, #1e1e3f, #3a3a6e);
+  --color-pre-text: #e0e0ff;
+
+  /* Syntax colors */
+  --code-keyword: #ff6c6b;    /* vivid red */
+  --code-function: #ffa94d;   /* warm orange */
+  --code-string: #9ece6a;     /* fresh green */
+  --code-number: #d3869b;     /* pinkish purple */
+  --code-comment: #7f848e;    /* soft gray */
+  --code-operator: #a9b1d6;   /* pastel blue */
+  --code-variable: #f0c674;   /* muted yellow */
+  --code-constant: #ff79c6;   /* bright magenta */
+
   --radius: 8px;
   --shadow: 0 4px 20px rgba(0,0,0,0.06);
 }
@@ -29,9 +38,19 @@
     --color-primary: #4da3ff;
     --color-primary-hover: #82c4ff;
     --color-border: #333;
-    --color-code-bg: #1e1e1e;
-    --color-pre-bg: #1a1a1a;
-    --color-pre-text: #eaeaea;
+
+    --color-code-bg: #2a2a3a;
+    --color-pre-bg: linear-gradient(135deg, #12121f, #30305a);
+    --color-pre-text: #c0c0ff;
+
+    --code-keyword: #ff6c6b;
+    --code-function: #f3e88d;
+    --code-string: #9ece6a;
+    --code-number: #d3869b;
+    --code-comment: #5c6370;
+    --code-operator: #7fdbca;
+    --code-variable: #f0c674;
+    --code-constant: #ff79c6;
   }
 }
 
@@ -87,6 +106,9 @@ code {
   border-radius: 4px;
   font-size: 0.95em;
   font-family: "Fira Code", monospace;
+  color: var(--code-string);
+  font-weight: 600;
+  transition: color 0.3s ease;
 }
 
 /* ===== Code Blocks ===== */
@@ -98,8 +120,63 @@ pre {
   overflow-x: auto;
   font-family: "Fira Code", monospace;
   font-size: 0.95em;
-  box-shadow: inset 0 0 0.5rem rgba(0,0,0,0.2);
-  transition: background-color 0.3s;
+  box-shadow: inset 0 0 0.8rem rgba(0,0,0,0.4);
+  transition: background 0.5s ease;
+  line-height: 1.5;
+}
+
+/* Syntax Highlighting - Custom */
+pre code {
+  display: block;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+pre code .keyword,
+pre code .selector,
+pre code .attr-name,
+pre code .tag {
+  color: var(--code-keyword);
+  font-weight: 700;
+}
+
+pre code .function,
+pre code .built_in,
+pre code .title {
+  color: var(--code-function);
+}
+
+pre code .string,
+pre code .char,
+pre code .attr-value,
+pre code .regex,
+pre code .url {
+  color: var(--code-string);
+}
+
+pre code .number,
+pre code .boolean,
+pre code .symbol,
+pre code .constant {
+  color: var(--code-number);
+  font-weight: 600;
+}
+
+pre code .comment,
+pre code .doctype {
+  color: var(--code-comment);
+  font-style: italic;
+}
+
+pre code .operator,
+pre code .entity,
+pre code .url {
+  color: var(--code-operator);
+}
+
+pre code .variable,
+pre code .property {
+  color: var(--code-variable);
 }
 
 /* ===== Tables ===== */
