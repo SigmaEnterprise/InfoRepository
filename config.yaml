@@ -1,0 +1,33 @@
+# Gollum configuration
+# Load with: gollum -c .gollum/config.yaml
+
+# Wiki settings
+:wiki_options:
+  base_path: /wiki           # URL base path
+  allow_uploads: dir         # Allow file uploads to a directory
+  live_preview: true         # Live preview mode
+  show_all: true             # Show all files, even if not linked
+  css: .gollum/public/custom.css  # Custom CSS file
+  universal_toc: true        # Table of contents for all pages
+
+# Server settings
+:server_options:
+  host: 127.0.0.1
+  port: 4567
+  log_level: 3               # Debug level logging (0=error, 1=warn, 2=info, 3=debug)
+  log_color: auto            # Color logs when appropriate
+  num_cpus: 0                # Use all available CPUs
+  pid_file: .gollum/gollum.pid
+  metrics: false             # Disable metrics endpoint
+
+# Optional: Healthcheck endpoint
+:healthcheck:
+  enabled: false
+  address: 127.0.0.1:8081
+
+# Optional profiling
+:profiling:
+  cpu_profile: false
+  memory_profile: false
+  speed_profile: false
+  trace_profile: false

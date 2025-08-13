@@ -4,12 +4,20 @@
 
 /* ===== Color System ===== */
 :root {
+  --font-heading: "Cinzel", serif; /* A font inspired by ancient scripts */
   --font-sans: "Fira Sans", "Segoe UI", Arial, sans-serif;
   --color-bg: #f8f9fa;
   --color-text: #2e2e2e;
   --color-primary: #0056b3;
   --color-primary-hover: #004085;
   --color-border: #dee2e6;
+
+  /* Egyptian Thoth Color Palette */
+  --color-gold: #FFD700; /* Gold */
+  --color-turquoise: #40E0D0; /* Turquoise */
+  --color-black: #000000; /* Black */
+  --color-white: #FFFFFF; /* White */
+  --color-deep-blue: #003366; /* Deep Blue */
 
   /* Code block spectrum */
   --color-code-bg: #f4f4f8;
@@ -64,6 +72,18 @@ body {
   padding: 0;
   font-size: 16px;
   transition: background-color 0.3s, color 0.3s;
+}
+
+/* ===== Header ===== */
+header {
+  background-color: var(--color-deep-blue);
+  color: var(--color-white);
+  padding: 20px;
+  text-align: center;
+}
+
+header img {
+  max-width: 150px; /* Adjust size as needed */
 }
 
 /* ===== Wiki Container ===== */
@@ -209,6 +229,14 @@ img:hover {
   transform: scale(1.02);
 }
 
+/* ===== Footer ===== */
+footer {
+  background-color: var(--color-black);
+  color: var(--color-gold);
+  padding: 10px;
+  text-align: center;
+}
+
 /* ===== Responsive Adjustments ===== */
 @media (max-width: 768px) {
   #wiki-content {
@@ -216,5 +244,8 @@ img:hover {
   }
   body {
     font-size: 15px;
+  }
+  header img {
+    max-width: 100px; /* Smaller logo for mobile */
   }
 }

@@ -43,14 +43,7 @@ If you have any questions or feedback, feel free to reach out to the wiki admini
 ---
 
 Thank you for visiting **My Gollum Wiki**! We hope you find the information helpful and engaging.
-```
 
-### Explanation of the Structure
 
-- **Title**: The main title introduces the wiki.
-- **Welcome Message**: A brief introduction to what the wiki is about.
-- **Table of Contents**: A list of links to important sections of the wiki for easy navigation.
-- **Key Sections**: Brief descriptions of each section with links to their respective pages.
-- **Recent Updates**: A section to highlight any recent changes or new content.
-- **Contact Information**: A way for users to reach out with questions or feedback.
+
 
