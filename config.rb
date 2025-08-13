@@ -2,7 +2,7 @@ wiki_opts = {
   base_path: '/wiki',
   allow_uploads: 'dir',
   live_preview: true,
-  css: '.gollum/public/custom.css',  # Adjusted path
+  css: '.gollum/public/custom.css',  
   show_all: true,
   universal_toc: true
 }
