@@ -1,42 +1,9 @@
----
-
 # Gollum: A Practical, Production-Ready Guide
 
 *A lightweight, self-hosted wiki powered by Git.*
 
 > **What is Gollum?**
 > Gollum is a lightweight, self-hosted wiki that uses a Git repository as its backend. Every page is a normal text file (Markdown, AsciiDoc, etc.), and every edit becomes a Git commit. That gives you **versioning**, **history**, **rollback**, **branching**, and the freedom to store or mirror your data anywhere Git can live.
-
----
-
-## Table of Contents
-
-* [Overview](#overview)
-* [Installing Gollum](#installing-gollum)
-
-  * [Docker / Docker Compose](#docker--docker-compose)
-  * [Manual Installation (Linux)](#manual-installation-linux)
-* [Reverse Proxy with Nginx](#reverse-proxy-with-nginx)
-
-  * [HTTP Reverse Proxy](#http-reverse-proxy)
-  * [Enable HTTPS with Certbot](#enable-https-with-certbot)
-* [Logging & Debugging](#logging--debugging)
-* [Backup & Restore](#backup--restore)
-
-  * [File-Based Backups](#file-based-backups)
-  * [Automated Backups (cron)](#automated-backups-cron)
-* [Updating & Upgrading](#updating--upgrading)
-
-  * [Docker Updates](#docker-updates)
-  * [Manual Updates (gem)](#manual-updates-gem)
-* [Features & Advanced Options](#features--advanced-options)
-
-  * [Enable API / Uploads](#enable-api--uploads)
-  * [Custom CSS / Branding](#custom-css--branding)
-* [Why Git Matters](#why-git-matters)
-* [Wrapping Up](#wrapping-up)
-
----
 
 ## Overview
 
