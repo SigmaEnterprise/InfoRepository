@@ -1,5 +1,7 @@
 # The Swiss Army Knife of Web Servers
 
+![Welcome to NGINX!](https://miro.medium.com/v2/resize:fit:4800/format:webp/0*7gr3mxeI8URP66y5.jpeg)
+
 Nginx is a powerful, high-performance web server, reverse proxy, load balancer, and HTTP cache that’s become a staple in modern web infrastructure. Designed to handle massive concurrent connections efficiently, Nginx powers everything from small personal projects to global tech giants.
 
 This article breaks down the essentials you need to know about Nginx, combining best practices, configuration tips, security, performance tuning, and more — all backed by authoritative sources.
@@ -160,8 +162,6 @@ Nginx’s modular architecture lets you add extra features — from GeoIP to ima
 ---
 
 # Summary
-
-![Welcome to NGINX!](https://miro.medium.com/v2/resize:fit:4800/format:webp/0*7gr3mxeI8URP66y5.jpeg)
 
 Nginx is a versatile, efficient web server and proxy tool. Mastering its configuration unlocks high performance, security, and scalability for your web projects.
 
