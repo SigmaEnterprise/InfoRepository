@@ -1,6 +1,6 @@
 #  Tutorials
 ## RSS-ATOM
 
-* [[Tutorials/RSS-ATOM/📜 How to Follow RSS Feeds on Nostr Using Atomstr|How to Follow RSS Feeds on Nostr]]
+* [[Tutorials/RSS-ATOM/How-to-Follow-RSS-Feeds-on-Nostr-Using-Atomstr]]
 * [[Coming Soon!]]
 * [[Coming Soon!]]
